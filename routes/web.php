@@ -18,7 +18,11 @@ Route::get('/', function () {
 });
 
 Route::get('/about', function () {
-    return view ('About');
+    return view ('About', [
+        "nama" => "Kevin Jonson",
+        "email" => "ppppppp@gmail.com",
+        "gambar" => "kevin.jpg"
+    ]);
 });
 
 Route::get('/gallery', function () {
